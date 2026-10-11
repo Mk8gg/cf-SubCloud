@@ -542,9 +542,9 @@ export async function getFakePage(e) {
             <input type="text" id="result" readonly onclick="copyToClipboard()">
             <div id="qrcode" class="hidden-qr"></div>
         </div>
-        <div class="beian">
+        ${e.beian ? `<div class="beian">
             <a href="${e.beianurl}" style="color: var(--primary-dark); text-decoration: none;">${e.beian}</a>
-        </div>
+        </div>` : ''}
     </div>
 
     <a href="https://github.com/Kwisma/cf-SubCloud" target="_blank" class="github-corner" aria-label="GitHub">
