@@ -518,7 +518,6 @@ export async function getFakePage(e) {
 
     <div class="glass-container">
         <div class="hero">
-            <h1>⚡ 星尘转换器</h1>
             <div class="badge">多合一订阅</div>
         </div>
 
