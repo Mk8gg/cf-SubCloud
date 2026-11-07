@@ -112,7 +112,7 @@ export function applyTemplate(top, rule, e) {
             udp_timeout: '5m',
         });
     }
-    if (e.bridge && e.ispre) {
+    if (e.bridge && e.is114) {
         top.outbounds.push({
             type: 'bridge',
             tag: 'bridge-out',
@@ -173,7 +173,7 @@ export function applyTemplate(top, rule, e) {
             return p;
         });
     }
-    if (e.ispre) {
+    if (e.is114) {
         const proxyname = rule.outbounds[0].tag;
         top.http_clients = [
             {
